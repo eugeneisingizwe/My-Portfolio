@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: darkgray;
+    font-size: 1.20rem;
+}
+
+/*Header begins right her*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    color:darkgreen
+}
+
+
+/*Navigation link within the header*/
+header nav a:hover { 
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+  a {
+    color: darkgreen;
+    margin: 0 auto;  
+    }
+/*Ul scrow to the corresponding section*/
+nav, .scroll-container {
+    text-align: right;
+    
+  }
+
+  nav {
+    width: 339px;
+   
+  }
+
+  .scroll-container {
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .scroll-page {
+    justify-content: right;
+    height: 100%;
+    font-size: 20px;
+  }
+
+
+/*sub-header - need to move repeating image*/
+
+.sub-header{
+    background-image: url("../Assets/Image/background-image.jpg");
+    background-size:contain;
+    background-repeat: repeat-x;
+    min-height: 30vh;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.sub-header img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 3px;
+    width: 150px;
+}
+
+.sub-header div{
+    flex: 0 0 10%;
+}
+
+
+/* Sub-header title - need to move the title to the right */
+.sub-header div h2 {
+    color: aqua;
+    padding: 2px 1px;
+    width: 1000px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Main section*/
+
+main{
+    margin: 80px;
+    width: 90%;
+}
+
+.contents{
+    margin: 20px 0;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.contents p{
+    flex: 0 0 95%;
+    font-size: 15px;
+    padding: 0 25px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.about-me{
+    display: flex;
+}
+
+.about-me h1{
+    border-right: 5px solid gray;
+    flex: 0 0 5%;
+    padding-right: 20px;
+    
+}
+.work-card{
+display: flex;
+flex-wrap: wrap;
+}
+
+.work-card >h1 {
+    border-right: 5px solid gray;
+        min-height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        margin: 4px;
+        margin-block-start: revert;
+   
+}
+
+
+.project-containers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 85%;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*Box model*/
+.surf-report{
+    background-color: lightgrey;
+    border: 5px solid aqua;
+    padding: 50px;
+    margin: 9px;
+    text-align: center;
+    flex-basis: 100%;
+    display: inline-flex;
+    
+}
+
+div h3:hover{
+    background-color: yellow;
+    transition: all 0.1s ease-in;
+}
+
+.project{
+    background-color: lightgrey;
+    flex-basis: 48%;
+    border: 5px solid aqua;
+    padding: 60px;
+    margin: 20px 5px;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: 1;
+    transition: all 0.5s ease-in-out;
+}
+/*Contact section - contact bars must styled*/
+.into {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.into h1{
+    border-right: 5px solid gray;
+    flex-basis: 0%;
+    margin-block-start: revert;
+    margin-right: 70px;
+    margin-block-start: revert;
+    flex: 0 0 5px;
+}
+
+.links {
+    padding: 15px;
+    color: darkgreen;
+    display: unset;
+    font-size:xx-large;
+    align-items: center;
+    margin-left: 100px;
+    margin-block-start: revert;
+    display: inline;
+}
+/*This is the footer*/
+footer p{
+    text-align: center;
+    margin: 20px;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .contents {
+      flex: 0 0 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .contents:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .contents {
+      flex: 0 0 33.333%;
+    
+    }
+  }
+  
