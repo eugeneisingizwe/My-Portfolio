@@ -210,7 +210,7 @@ footer p{
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
     .contents {
       flex: 0 0 50%;
@@ -223,7 +223,7 @@ footer p{
   }
   
   /* media query for larger screens */
-  @media screen and (min-width: 992px) {
+  @media screen and (MAX-width: 768px) {
     header {
       width: 100%;
     }
