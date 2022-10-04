@@ -7,6 +7,7 @@
 body{
     background-color: darkgray;
     font-size: 1.20rem;
+ 
 }
 
 /*Header begins right her*/
@@ -61,21 +62,25 @@ nav, .scroll-container {
 /*sub-header - need to move repeating image*/
 
 .sub-header{
-    background-image: url("../Assets/Image/background-image.jpg");
-    background-size:contain;
-    background-repeat: repeat-x;
+    background-image: url("../Assets/Image/background.jpg");
+    background: url("../Assets/Image/background.jpg") no-repeat;
+    background-size: cover;
     min-height: 30vh;
-    padding: 20px 0;
+    height: 400px;
+    background-attachment: relative;
+    background-position: center; 
     justify-content: center;
-    align-items: flex-end;
+
 }
 
 
 .sub-header img{
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 3px;
+    padding: 2px;
     width: 150px;
+    margin: 40px;
+
 }
 
 .sub-header div{
