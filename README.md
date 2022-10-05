@@ -14,6 +14,6 @@
 
 https://eugeneisingizwe.github.io/My-Portfolio/ 
 
-![Screenshot of my portfolio](Assets/Image/screen-shot.png)
+![Screenshot of my portfolio](./Assets/Image/webpage-screenshot.png)
 
 
