@@ -24,46 +24,69 @@ header {
 
 
 /*Navigation link within the header*/
-header nav a:hover { 
-  padding: 20px;
-  font-size: 25px;
-  font-weight: bold;
+
+nav {
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+ 
+
 }
 
-  a {
-    color: darkgreen;
-    margin: 0 auto;  
-    }
-/*Ul scrow to the corresponding section*/
-nav, .scroll-container {
-    text-align: right;
-    
-  }
+nav ul {
+  list-style: none;
+  text-align: center;
+}
 
-  nav {
-    width: 339px;
-   
-  }
+nav ul li {
+  display: inline-block;
+}
 
-  .scroll-container {
-    width: 350px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
 
-  .scroll-page {
-    justify-content: right;
-    height: 100%;
-    font-size: 20px;
-  }
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
 
+nav ul li a:hover {
+ color: black;
+}
+
+nav.scroll-containers ul li a {
+  position: relative;
+}
+
+nav.scroll-containers ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.scroll-containers ul li a:hover:after {
+  width: 100%;
+}
 
 /*sub-header - need to move repeating image*/
 
 .sub-header{
-    background-image: url("../Assets/Image/background.jpg");
-    background: url("../Assets/Image/background.jpg") no-repeat;
+    background-image: url("../Assets/Image/te.jpg");
+    background: url("../Assets/Image/te.jpg") no-repeat;
     background-size: cover;
     min-height: 30vh;
     height: 400px;
@@ -104,19 +127,20 @@ main{
     width: 90%;
 }
 
-.contents{
+.content{
     margin: 20px 0;
     padding: 10px 0;
     flex-wrap: wrap;
     font-size: 20px;
 }
 
-.contents p{
-    flex: 0 0 95%;
-    font-size: 15px;
-    padding: 0 25px;
+.content p{
+    flex: 0 0 80%;
+    font-size: 20px;
+    padding: 10px;
     line-height: 1.5;
     margin-bottom: 15px;
+    margin: 15px;
 }
 
 .about-me{
@@ -132,97 +156,212 @@ main{
 .work-card{
 display: flex;
 flex-wrap: wrap;
+height: 10px;
+
 }
 
 .work-card >h1 {
     border-right: 5px solid gray;
-        min-height: 200px;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 20px;
-        margin: 4px;
-        margin-block-start: revert;
+    flex: 0 0 5%;
+    padding-right: 20px;
+    margin: 4px;
+    height: 680px;
+      
    
 }
 
+/* Main section*/
 
-.project-containers{
+.project{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 85%;
+    flex-basis: 70%;
+  
     justify-content: center;
-    margin: 20px;
+    box-sizing: border-box;
+  
+
+    
 }
 
 /*Box model*/
 .surf-report{
-    background-color: lightgrey;
-    border: 5px solid aqua;
-    padding: 50px;
-    margin: 9px;
-    text-align: center;
-    flex-basis: 100%;
-    display: inline-flex;
-    
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
+
+  
 }
 
-div h3:hover{
-    background-color: yellow;
-    transition: all 0.1s ease-in;
+.led-wall{
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
 }
 
-.project{
-    background-color: lightgrey;
-    flex-basis: 48%;
-    border: 5px solid aqua;
-    padding: 60px;
-    margin: 20px 5px;
-    text-align: center;
-    display: inline-flex;
-    flex-wrap: 1;
-    transition: all 0.5s ease-in-out;
+.calculator{
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
 }
-/*Contact section - contact bars must styled*/
+
+.pastel-puzzels{
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
+}
+
+.run-buddy{
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
+}
+
+.github-rep{ 
+  background-color: lightgrey;
+  flex-basis: 37%;
+  border: 5px solid aqua;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
+}
+
+
+/*footer with background image*/
+
+footer{
+  background-image: url("../Assets/Image/te.jpg");
+    background: url("../Assets/Image/te.jpg") no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    height: 75px;
+    background-attachment: relative;
+    background-position: center; 
+    justify-content: center;
+
+
+}
 .into {
-    display: flex;
-    flex-wrap: wrap;
 
+text-align: center;
+margin: 50px;
+   
 }
 
-.into h1{
-    border-right: 5px solid gray;
-    flex-basis: 0%;
-    margin-block-start: revert;
-    margin-right: 70px;
-    margin-block-start: revert;
-    flex: 0 0 5px;
-}
-
-.links {
-    padding: 15px;
-    color: darkgreen;
-    display: unset;
+/*coontact links with hover effect*/
+.links a{
+  text-decoration: none;
     font-size:xx-large;
-    align-items: center;
-    margin-left: 100px;
-    margin-block-start: revert;
-    display: inline;
+    font-weight: 500;
+    color: aqua;
+    padding-left: 170px;
+    text-align:center;
+    background-image: linear-gradient(
+      to right,
+      #168866,
+      #54b3d6 50%,
+      hsl(0, 0%, 0%) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
-/*This is the footer*/
+
+
+.links a:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+
+.links a:hover {
+  background-position: 0;
+ }
+
+ .links a:hover::before {
+  width: 100%;
+}
+
 footer p{
-    text-align: center;
-    margin: 20px;
+  margin: 50px;
+  text-align: center;
+  color: black;
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 992px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    .contents {
+    .content {
       flex: 0 0 50%;
     }
   
     /* select the last child to grow to full width if it has space to grow */
-    .contents:last-child {
+    .content:last-child {
       flex-grow: 1;
     }
   }
@@ -233,7 +372,7 @@ footer p{
       width: 100%;
     }
   
-    .contents {
+    .content {
       flex: 0 0 33.333%;
     
     }

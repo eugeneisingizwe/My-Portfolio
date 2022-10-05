@@ -8,6 +8,7 @@
     <title>
         Eugene-Portfplio
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./Assets/reset.css" />
     <link rel="stylesheet" href="./Assets/style.css" />
 
@@ -19,11 +20,12 @@
         <h1>Eugene Isingizwe</h1>
         <nav>
             <div class="scroll-containers">
-                <a href="#" class="scroll-page" id="About-Me" href="#About-Me">About Me</a>
-                <a href="#" class="scroll-page" id="Work" href="#work">Work</a>
-                <a href="#" class="scroll-page" id="Contact-Me" href="#Contact-Me">Contact Me</a>
-                <a href="#" class="scroll-page" id="Resume" href="#Resume">Resume</a>
-            </div>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
         </nav>
 
     </header>
@@ -36,63 +38,73 @@
     </aside>
 
     <main>
-        <section class="contents">
-            <section class="content">
-                <div class="about-me">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus sint officiis. Cumque
-                        facilis nisi, culpa maiores non officiis. Tempora commodi cum aut non sit molestias? Excepturi
-                        odit natus corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id delectus
-                        impedit quo hic rerum! Quis maiores obcaecati, vitae deserunt quidem veritatis aut vel
-                        accusantium amet ipsa assumenda illo. Dolorum, quisquam?Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Asperiores soluta, placeat maiores voluptas nobis nam voluptates temporibus
-                        odit dolores exercitationem fugit quasi corrupti impedit suscipit sint dicta praesentium
-                        recusandae dolore.
-                    </p>
-                </div>
-            </section>
+        <section class="content">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus sint officiis. Cumque
+                    facilis nisi, culpa maiores non officiis. Tempora commodi cum aut non sit molestias? Excepturi
+                    odit natus corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id delectus
+                    impedit quo hic rerum! Quis maiores obcaecati, vitae deserunt quidem veritatis aut vel
+                    accusantium amet ipsa assumenda illo. Dolorum, quisquam?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Asperiores soluta, placeat maiores voluptas nobis nam voluptates temporibus
+                    odit dolores exercitationem fugit quasi corrupti impedit suscipit sint dicta praesentium
+                    recusandae dolore.
+                </p>
+            </div>
+        </section>
 
-            <section class="justify-center">
-                <div class="work-body">
-                    <figure class="work-card">
-                        <h1>Work</h1>
-                        <div class="project-containers">
-
-                            <div class="surf-report">
-                                <h3>National Parker Founder <br>  <p><a href="https://rarellano5280.github.io/National-Park-Finder/" >HTML, CSS, JavaScript</a></p>    </h3>
-                                
-                            </div>
-                            <div class="project">
-                                <h3>Led Wall <br>Node.LoT</h3>
-                            </div>
-                            <div class="project">
-                                <h3>calculator<br>React/JavaScript/CSS</h3>
-                            </div>
-                            <div class="project">
-                                <h3>Pastel Puzzels<br>MERN Stack</h3>
-                            </div>
-                            <div class="project">
-                                <h3>Run Buddy<br>THML/CSS</h3>
-                            </div>
-                    </figure>
-                </div>
-                </div>
-            </section>
-
-            <section class="contact-info">
-                <div class="into">
-                    <h1>Contact Me</h1>
-                    <div class="links">
-                        <a class="number" href="#">555-555-5555<a>
-                                <a class="Email" href="#">Email</a>
-                                <a class="Github" href="#">Github</a>
-                                <a class="LinkedIn" href="#">LinkedIn</a>
+        <section class="justify-body">
+            <div class="work-card">
+                <h1>Work</h1>
+            </div>
+            <div class="project-containers">
+                <div class="project">
+                    <div class="surf-report">
+                        <h3>National Parker Founder <br>
+                            <p><a href="https://rarellano5280.github.io/National-Park-Finder/">HTML, CSS, JavaScript</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus dolor optio, iste repudiandae dicta officia incidunt id odio consectetur.</p>
+                        </h3>
+                    </div>
+                    <div class="led-wall">
+                        <h3>Led Wall <br>Node.LoT</h3>
+                    </div>
+                    <div class="calculator">
+                        <h3>calculator<br>React/JavaScript/CSS</h3>
+                    </div>
+                    <div class="pastel-puzzels">
+                        <h3>Pastel Puzzels<br>MERN Stack</h3>
+                    </div>
+                    <div class="run-buddy">
+                        <h3>Run Buddy<br>THML/CSS</h3>
+                    </div>
+                    <div class="github-rep">
+                        <h3>Github Repos</h3>
                     </div>
                 </div>
-            </section>
-
+            </div>
+        </section>
     </main>
+
     <footer>
+        <section class="contact-info">
+            <div class="into">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="links">
+                <a  class="number"  href="#">555-555-5555</a>
+                <i class="fa fa-phone" aria-hidden="true" style="font-size:36px"></i>
+
+                <a class="email" href="#">Email</a>
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size:36px"></i>
+
+                <a class="github" href="#">Github</a>
+                <i class="fa fa-github" style="font-size:36px"></i>
+
+                <a class="LinkedIn" href="#">LinkedIn</a>
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            </div>
+        </section>
         <p>&copy; 2022 Eugene Isingizwe Portfolio.</p>
     </footer>
 </body>
