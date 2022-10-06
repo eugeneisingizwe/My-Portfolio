@@ -155,17 +155,15 @@ main{
 }
 .work-card{
 display: flex;
-flex-wrap: wrap;
-height: 10px;
+
 
 }
 
 .work-card >h1 {
-    border-right: 5px solid gray;
-    flex: 0 0 5%;
-    padding-right: 20px;
-    margin: 4px;
-    height: 680px;
+  border-right: 5px solid gray;
+  flex: 0 0 5%;
+  padding-right: 20px;
+  
       
    
 }
@@ -175,8 +173,7 @@ height: 10px;
 .project{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 70%;
-  
+    flex-basis: 80%;
     justify-content: center;
     box-sizing: border-box;
   
@@ -188,11 +185,11 @@ height: 10px;
 .surf-report{
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
@@ -200,88 +197,122 @@ height: 10px;
   text-size-adjust: 25px;
   justify-content: left;
 
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
   
 }
+
+.surf-report:hover { outline-width: 10px; }
 
 .led-wall{
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
   height: 200px;
   text-size-adjust: 25px;
   justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
 
+.led-wall:hover { outline-width: 10px; }
 .calculator{
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
   height: 200px;
   text-size-adjust: 25px;
   justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
+
+.calculator:hover { outline-width: 10px; }
 
 .pastel-puzzels{
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
   height: 200px;
   text-size-adjust: 25px;
   justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
+
+.pastel-puzzels:hover { outline-width: 10px; }
 
 .run-buddy{
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
   height: 200px;
   text-size-adjust: 25px;
   justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
+
+.run-buddy:hover { outline-width: 10px; }
 
 .github-rep{ 
   background-color: lightgrey;
   flex-basis: 37%;
-  border: 5px solid aqua;
+ /* border: 5px solid aqua;*/
   padding: 20px;
   margin: 10px;
   text-align: center;
-  display: inline-flex;
+  /*display: inline-flex;*/
   flex-wrap: 1;
   transition: all 0.5s ease-in-out;
   width: 50px;
   height: 200px;
   text-size-adjust: 25px;
   justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
+
+.github-rep:hover { outline-width: 10px; }
 
 
 /*footer with background image*/
@@ -298,8 +329,12 @@ footer{
 
 
 }
-.into {
 
+.content-info{
+  display: flex;
+}
+
+.into {
 text-align: center;
 margin: 50px;
    
@@ -354,27 +389,28 @@ footer p{
 }
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 992px) {
+@media (max-width: 992px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    .content {
-      flex: 0 0 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .content:last-child {
-      flex-grow: 1;
-    }
+  .header{
+    width: 100%;
   }
+
+  .work-card,h3,p{
+    flex: 0 0 50%;
+  
+  
+  }
+
   
   /* media query for larger screens */
-  @media screen and (MAX-width: 768px) {
-    header {
-      width: 100%;
-    }
+  @media (max-width: 768px) {
+      
+      }
   
-    .content {
-      flex: 0 0 33.333%;
-    
-    }
+
+  @media (max-width: 576px){
+
   }
+    
+  
   
