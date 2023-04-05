@@ -106,6 +106,10 @@ nav.scroll-containers ul li a:hover:after {
 
 }
 
+h4{
+  margin-left: 35px;
+}
+
 .sub-header div{
     flex: 0 0 10%;
 }
@@ -124,7 +128,9 @@ nav.scroll-containers ul li a:hover:after {
 
 main{
     margin: 80px;
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
 .content{
@@ -143,250 +149,101 @@ main{
     margin: 15px;
 }
 
-.about-me{
+.personal-info{
     display: flex;
 }
 
-.about-me h1{
+.personal-info h1{
     border-right: 5px solid gray;
     flex: 0 0 5%;
     padding-right: 20px;
     
 }
-.work-card{
-display: flex;
-
-
+.about-me{
+  margin-left: 146px;
+  position: relative;
+  bottom: 80px; 
 }
 
-.work-card >h1 {
-  border-right: 5px solid gray;
-  flex: 0 0 5%;
-  padding-right: 20px;
-  
-      
-   
+.justify-body{
+  display: flex;
+  width: 84%;
+  margin: 14px;
+  position: relative;
+  left: 25px;
+  flex-wrap: wrap;
 }
 
-/* Main section*/
-
-.project{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 80%;
-    justify-content: center;
-    box-sizing: border-box;
-  
-
-    
-}
-
-/*Box model*/
-.surf-report{
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-  
-}
-
-.surf-report:hover { outline-width: 10px; }
-
-.led-wall{
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-}
-
-.led-wall:hover { outline-width: 10px; }
-.calculator{
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-}
-
-.calculator:hover { outline-width: 10px; }
-
-.pastel-puzzels{
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-}
-
-.pastel-puzzels:hover { outline-width: 10px; }
-
-.run-buddy{
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-}
-
-.run-buddy:hover { outline-width: 10px; }
-
-.github-rep{ 
-  background-color: lightgrey;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  /*display: inline-flex;*/
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-  outline: solid 5px aqua;
-  transition: outline 0.6s linear;
-  /*margin: 0.5em;*/
-}
-
-.github-rep:hover { outline-width: 10px; }
-
-
-/*footer with background image*/
-
-footer{
-  background-image: url("../Assets/Image/te.jpg");
-    background: url("../Assets/Image/te.jpg") no-repeat;
-    background-size: cover;
-    min-height: 30vh;
-    height: 75px;
-    background-attachment: relative;
-    background-position: center; 
-    justify-content: center;
-
-
-}
-
-.content-info{
+.projects{
   display: flex;
 }
 
-.into {
-text-align: center;
-margin: 50px;
-   
-}
-
-/*coontact links with hover effect*/
-.links a{
-  text-decoration: none;
-    font-size:xx-large;
-    font-weight: 500;
-    color: aqua;
-    padding-left: 170px;
-    text-align:center;
-    background-image: linear-gradient(
-      to right,
-      #168866,
-      #54b3d6 50%,
-      hsl(0, 0%, 0%) 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.links a:before {
-  content: '';
-  background: #54b3d6;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-}
-
-
-.links a:hover {
-  background-position: 0;
- }
-
- .links a:hover::before {
-  width: 100%;
-}
-
-footer p{
-  margin: 50px;
+.project{
+  flex: 1 0 300px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: lightgrey;
+  flex-basis: 37%;
+ /* border: 5px solid aqua;*/
+  padding: 20px;
+  margin: 10px;
   text-align: center;
-  color: black;
+  /*display: inline-flex;*/
+  flex-wrap: 1;
+  transition: all 0.5s ease-in-out;
+  width: 50px;
+  height: 200px;
+  text-size-adjust: 25px;
+  justify-content: left;
+
+  outline: solid 5px aqua;
+  transition: outline 0.6s linear;
+  /*margin: 0.5em;*/
 }
+
+.links{
+  width: 100%;
+  position: relative;
+  top: 79px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 30px; */
+  justify-content: space-evenly;
+  min-height: 16vh;
+  /* height: 20px; */
+  display: block;
+  /* margin-left: -78px; */
+  left: 430px;
+}
+
+.link{
+  position: relative;
+  top: 82px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.contact-info{
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 71px;
+    height: 25%;
+    width: 25%;
+    left: 500px;
+}
+
+footer {
+  position: relative;
+  /* left: 271px; */
+  background-color: aqua;
+  display: block;
+  top: 79px;
+}
+
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media (max-width: 992px) {
@@ -394,23 +251,11 @@ footer p{
   .header{
     width: 100%;
   }
+}
 
-  .work-card,h3,p{
-    flex: 0 0 10%;
-    text-align: center;
-  
-  }
 
   
-  /* media query for larger screens */
-  @media (max-width: 768px) {
-      
-      }
-  
 
-  @media (max-width: 576px){
-
-  }
     
   
   
